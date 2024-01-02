@@ -53,6 +53,7 @@ button{border: none; background: none;}
   color: #999;
   font-size: 13PX;
   text-decoration: none;
+  line-height: 300%;
 }
 
   .button:hover{    padding: 7px 10px;
