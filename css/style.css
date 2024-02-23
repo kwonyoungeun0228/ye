@@ -39,11 +39,13 @@ body {
   color: #333;
 }
 
+.row{margin-left: auto!important; margin-right: auto!important;}
+
 
 ul{list-style: none;}
 .navigation>a{margin: 0 2px;}
 .fh5co-social-icons{font-size: 13px;}
-.about{padding-top: 5em;}
+.about{padding-top: 5em; text-align: center;}
 .about span{color: #000}
 
 button{border: none; background: none;}
@@ -4829,7 +4831,7 @@ tbody.collapse.in {
   padding: 20px 20px;
   font-size: 18px;
   line-height: 20px;
-  height: 60px;
+
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -6575,6 +6577,8 @@ button.close {
   }
 }
 @media (min-width: 992px) {
+  .col-md-offset-2{margin-left: auto!important;}
+  .col-md-8{width: auto!important;}
   .modal-lg {
     width: 900px;
   }
@@ -7624,7 +7628,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   display: block;
   float: none !important;
-  width: 200px;
+  width: 100px;
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -7632,6 +7636,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", arial, sans-serif;
   color: #000;
 }
+#fh5co-header .navbar-brand>img{width: 100%;}
 #fh5co-header .navbar-brand:hover {
   color: #404040;
 }
