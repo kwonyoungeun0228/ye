@@ -50,13 +50,12 @@ body {
 .modal-content {
   background-color: unset;
   border: none;
-  margin: 2% auto;
+  margin: 2% auto 0;
   padding: 20px;
-  width: 80%;
+  width: 60%;
   box-shadow: none;
 }
-.pop_title{width: 80%;
-  margin: 0 auto;
+.pop_title{
   color: #fff;}
 
 span.background {
@@ -70,16 +69,14 @@ span.background {
   line-height: 44px;
   position: fixed;
   
-  right: 10%;
+  right: 15%;
 }
 
 /* .r_close:hover {
   opacity: 1;
 }  */
 
-.popup_img {
-  text-align: center;
-}
+
 
 .image-pop:hover img {
   opacity: .5;
@@ -139,21 +136,7 @@ z-index: -1; /* Ensure the overlay is behind the content */
   z-index: 0;
 }
 
-.pop_title {
-  width: 80%;
-  margin: 0 auto;
-}
 
-.pop_p {
-  width: 80%;
-  margin: 5px auto 0;
-}
-
-.pop_rink {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px 0;
-}
 
 .pop_rink a {
   text-decoration: none;
@@ -2217,9 +2200,12 @@ pre code {
 
 
 }
-@media (max-width: 1680px) {  .r_close{    right: 5%;}}
+@media (max-width: 1680px) { 
+   .r_close{    right: 5%;}
+.modal-content{width:80%;}
+}
 @media (max-width: 992px) {
-
+  .modal-content{width:95%;}
   .fh5co-logo{display: none !important;}
   header .col-md-12{display: block;}
   #fh5co-main {width: auto;}
