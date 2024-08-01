@@ -56,7 +56,8 @@ body {
   box-shadow: none;
 }
 .pop_title{width: 80%;
-  margin: 0 auto;}
+  margin: 0 auto;
+  color: #fff;}
 
 span.background {
   display: inline;
@@ -64,7 +65,7 @@ span.background {
   color: #000; 
   padding: 5px; /* 텍스트 주변 여백 */
 }
-.pop_rink{color: #fff;}
+
  .r_close {
   line-height: 44px;
   position: fixed;
@@ -145,7 +146,7 @@ z-index: -1; /* Ensure the overlay is behind the content */
 
 .pop_p {
   width: 80%;
-  margin: 0 auto;
+  margin: 5px auto 0;
 }
 
 .pop_rink {
