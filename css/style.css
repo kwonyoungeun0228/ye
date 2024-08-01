@@ -55,12 +55,21 @@ body {
   width: 80%;
   box-shadow: none;
 }
+.pop_title{width: 80%;
+  margin: 0 auto;}
 
+span.background {
+  display: inline;
+  background-color: #fff;
+  color: #000; 
+  padding: 5px; /* 텍스트 주변 여백 */
+}
+.pop_rink{color: #fff;}
  .r_close {
   line-height: 44px;
-  position: absolute;
+  position: fixed;
   
-  right: 0;
+  right: 10%;
 }
 
 /* .r_close:hover {
@@ -147,7 +156,7 @@ z-index: -1; /* Ensure the overlay is behind the content */
 
 .pop_rink a {
   text-decoration: none;
-  color: #818892;
+  color: rgba(255, 255, 255, 0.5);
 }
 .r_close {
 width: auto;
@@ -2207,8 +2216,9 @@ pre code {
 
 
 }
+@media (max-width: 1680px) {  .r_close{    right: 5%;}}
 @media (max-width: 992px) {
-  .r_close{    right: -10%;}
+
   .fh5co-logo{display: none !important;}
   header .col-md-12{display: block;}
   #fh5co-main {width: auto;}
@@ -2237,6 +2247,7 @@ pre code {
   .container{    margin-right: auto;    padding-right: 20px;}
  
 }
+@media (max-width: 600px) {  .r_close{    right: 2%;}}
 
 @media (min-width: 992px) {
   header .col-md-12{display: none;}
