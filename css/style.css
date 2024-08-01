@@ -12,6 +12,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+a {
+  color: #007bff;
+  text-decoration: none;
+  word-wrap: break-word; /* 긴 단어 자동 줄바꿈 */
+  overflow-wrap: break-word; /* 긴 단어 자동 줄바꿈 */
+  word-break: break-all; /* 모든 단어 줄바꿈 허용 */
+  white-space: normal; /* 공백을 일반 텍스트처럼 처리 */
+  display: inline-block;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -69,7 +78,7 @@ span.background {
   line-height: 44px;
   position: fixed;
   
-  right: 15%;
+  right: 10%;
 }
 
 /* .r_close:hover {
@@ -2205,7 +2214,7 @@ pre code {
 .modal-content{width:80%;}
 }
 @media (max-width: 992px) {
-  .modal-content{width:95%;}
+
   .fh5co-logo{display: none !important;}
   header .col-md-12{display: block;}
   #fh5co-main {width: auto;}
@@ -2234,7 +2243,7 @@ pre code {
   .container{    margin-right: auto;    padding-right: 20px;}
  
 }
-@media (max-width: 600px) {  .r_close{    right: 2%;}}
+@media (max-width: 600px) {  .r_close{    right: 2%;position: absolute;}    .modal-content { width: 90%;} }
 
 @media (min-width: 992px) {
   header .col-md-12{display: none;}
@@ -8008,7 +8017,7 @@ h1, h2, h3, h4, h5, h6 {
     #fh5co-board .item .fh5co-board-img:before{display: block; content:""; width: 100%; height: 100%; background-color:rgba(0, 0, 0, 1);position: absolute;}
 
 #fh5co-board .item a {
-  display: block;
+  display: block;    line-height: 15px;
 }
 #fh5co-board .item .fh5co-desc {
   padding: 20px;
@@ -8023,7 +8032,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 #fh5co-board .item img {
-  max-width: 100%;
+  width: 100%;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
