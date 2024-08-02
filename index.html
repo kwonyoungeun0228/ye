@@ -33,38 +33,38 @@
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/jportilio.min.js"></script>
 	<script>
-		$(document).ready(function() {
-    var modals = $('.modal');
-    var span = $('.r_close');
+		$(document).ready(function () {
+			var modals = $('.modal');
+			var span = $('.r_close');
 
-    $('.openModal').on('click', function() {
-        var target = $(this).data('target');
-        $('#' + target).show();
-        $('body').addClass('modal-open');
-    });
+			$('.openModal').on('click', function () {
+				var target = $(this).data('target');
+				$('#' + target).show();
+				$('body').addClass('modal-open');
+			});
 
-    span.on('click', function() {
-        modals.hide();
-        $('body').removeClass('modal-open');
-    });
+			span.on('click', function () {
+				modals.hide();
+				$('body').removeClass('modal-open');
+			});
 
-    $(window).on('click', function(event) {
-        if ($(event.target).hasClass('modal')) {
-            modals.hide();
-            $('body').removeClass('modal-open');
-        }
-    });
+			$(window).on('click', function (event) {
+				if ($(event.target).hasClass('modal')) {
+					modals.hide();
+					$('body').removeClass('modal-open');
+				}
+			});
 
-    $('.modal-content').on('click', function(event) {
-        event.stopPropagation();
-    });
+			$('.modal-content').on('click', function (event) {
+				event.stopPropagation();
+			});
 
-    // Add event listener to images inside .modal-content
-    $('.modal-content img').on('click', function() {
-        $(this).closest('.modal').hide();
-        $('body').removeClass('modal-open');
-    });
-});
+			// Add event listener to images inside .modal-content
+			$('.modal-content img').on('click', function () {
+				$(this).closest('.modal').hide();
+				$('body').removeClass('modal-open');
+			});
+		});
 
 
 	</script>
@@ -118,21 +118,52 @@
 				</div>
 
 				<div id="fh5co-board" data-columns>
-					<div class="item shot-thumbnail all web">
+					<div class="item shot-thumbnail all web mobile">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_23.jpg" class="openModal" data-target="modal23">
 								<div class="tx1">농촌진흥청 국립원예특작과학원</div>
 								<div class="tx2">반응형 디자인 100%</div>
+								
 							</div>
 						</div>
 						<!-- Modal Structure -->
 						<div id="modal23" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<h2 class="pop_title">농촌진흥청 국립원예특작과학원</h2>
-            <p class="pop_p"><span class="background">반응형 웹디자인 100% + 퍼블리싱 진행중</span></p>
-            <p class="pop_rink"><a href="https://www.nihhs.go.kr/usr/main/mainPage.do" target="_blank">https://www.nihhs.go.kr/usr/main/mainPage.do</a></p>
+								<p class="pop_p"><span class="background">반응형 웹디자인 100% + 퍼블리싱 진행중</span></p>
+								<p class="pop_rink"><a href="https://www.nihhs.go.kr/usr/main/mainPage.do"
+										target="_blank">https://www.nihhs.go.kr/usr/main/mainPage.do</a></p>
 								<div class="popup_img"><img src="images/img_23_popup.jpg" alt="Popup Image"></div>
+							</div>
+						</div>
+						<!-- <div class="fh5co-desc">녹테마레<br>메인PC, Mobole디자인 + 퍼블리싱100%</div> -->
+					</div>
+					<div class="item shot-thumbnail all mobile">
+						<div class="animate-box">
+							<div class="image-pop"><img src="images/img_24.jpg" class="openModal" data-target="modal24">
+								<div class="tx1">Frash 과일주스 전문 cafe</div>
+								<div class="tx2">디자인 100%</div>
+							</div>
+						</div>
+						<!-- Modal Structure -->
+						<div id="modal24" class="modal">
+							<div class="modal-content">
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
+								<h2 class="pop_title">Frash 과일주스 전문 cafe</h2>
+								<p class="pop_p"><span class="background">디자인 100% + 퍼블리싱 진행중</span></p>
+								<!-- <p class="pop_rink"><a href="https://www.nihhs.go.kr/usr/main/mainPage.do"
+										target="_blank">https://www.nihhs.go.kr/usr/main/mainPage.do</a></p> -->
+								
+								<div class="popup_img"><img src="images/img_24_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 						<!-- <div class="fh5co-desc">녹테마레<br>메인PC, Mobole디자인 + 퍼블리싱100%</div> -->
@@ -147,16 +178,63 @@
 						<!-- Modal Structure -->
 						<div id="modal1" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<h2 class="pop_title">녹테마레</h2>
-            <p class="pop_p"><span class="background">반응형 웹디자인 100% + 퍼블리싱 100%</span></p>
-            <p class="pop_rink"><a href="https://noctemare.com/" target="_blank">https://noctemare.com/</a></p>
+								<p class="pop_p"><span class="background">반응형 웹디자인 100% + 퍼블리싱 100%</span></p>
+								<p class="pop_rink"><a href="https://noctemare.com/"
+										target="_blank">https://noctemare.com/</a></p>
 								<div class="popup_img"><img src="images/img_1_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 						<!-- <div class="fh5co-desc">녹테마레<br>메인PC, Mobole디자인 + 퍼블리싱100%</div> -->
 					</div>
-					<div class="item shot-thumbnail all web">
+					<div class="item shot-thumbnail all banner">
+						<div class="animate-box">
+							<div class="image-pop"><img src="images/img_25.jpg" class="openModal" data-target="modal25">
+								<div class="before"></div>
+								<div class="tx1">오피스아울렛</div>
+								<div class="tx2">사이즈별 메인배너 디자인</div>
+							</div>
+							<!-- <div class="fh5co-desc">빨간펜<br>반응형웹 디자인 + 퍼블리싱100%</div> -->
+						</div>
+						<!-- Modal Structure -->
+						<div id="modal25" class="modal">
+							<div class="modal-content">
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
+								<div class="popup_img"><img src="images/img_25_popup.jpg" alt="Popup Image"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item shot-thumbnail all banner">
+						<div class="animate-box">
+							<div class="image-pop"><img src="images/img_26.jpg" class="openModal" data-target="modal26">
+								<div class="before"></div>
+								<div class="tx1">오피스아울렛</div>
+								<div class="tx2">사이즈별 메인배너 디자인</div>
+							</div>
+							<!-- <div class="fh5co-desc">빨간펜<br>반응형웹 디자인 + 퍼블리싱100%</div> -->
+						</div>
+						<!-- Modal Structure -->
+						<div id="modal26" class="modal">
+							<div class="modal-content">
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
+								<div class="popup_img"><img src="images/img_26_popup.jpg" alt="Popup Image"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item shot-thumbnail all web mobile">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_3.jpg" class="openModal" data-target="modal3">
 								<div class="before"></div>
@@ -168,12 +246,16 @@
 						<!-- Modal Structure -->
 						<div id="modal3" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_3_popup.gif" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					<div class="item shot-thumbnail all ">
+					<div class="item shot-thumbnail all web mobile">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_4.jpg" class="openModal" data-target="modal4">
 								<div class="before"></div>
@@ -185,12 +267,16 @@
 						<!-- Modal Structure -->
 						<div id="modal4" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_4_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					<div class="item shot-thumbnail all web">
+					<div class="item shot-thumbnail all web mobile">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_8.jpg" class="openModal" data-target="modal8">
 								<div class="before"></div>
@@ -202,7 +288,11 @@
 						<!-- Modal Structure -->
 						<div id="modal8" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_8_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -219,12 +309,16 @@
 						<!-- Modal Structure -->
 						<div id="modal13" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_13_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					
+
 
 					<div class="item shot-thumbnail all character">
 						<div class="animate-box">
@@ -238,12 +332,16 @@
 						<!-- Modal Structure -->
 						<div id="modal2" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_2_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-<div class="item shot-thumbnail all web">
+					<div class="item shot-thumbnail all web">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_19.jpg" class="openModal" data-target="modal19">
 								<div class="tx1">부산시설공단</div>
@@ -254,13 +352,17 @@
 						<!-- Modal Structure -->
 						<div id="modal19" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_19_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
 
-					
+
 					<div class="item shot-thumbnail all logol">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_15.jpg" class="openModal" data-target="modal15">
@@ -273,7 +375,11 @@
 						<!-- Modal Structure -->
 						<div id="modal15" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_15_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -290,7 +396,11 @@
 						<!-- Modal Structure -->
 						<div id="modal21" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_21_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -307,7 +417,11 @@
 						<!-- Modal Structure -->
 						<div id="modal22" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_22_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -324,7 +438,11 @@
 						<!-- Modal Structure -->
 						<div id="modal12" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/catmovie01.gif" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -341,13 +459,17 @@
 						<!-- Modal Structure -->
 						<div id="modal17" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_17_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					
-										<div class="item shot-thumbnail all sns">
+
+					<div class="item shot-thumbnail all sns">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_9.jpg" class="openModal" data-target="modal9">
 								<div class="before"></div>
@@ -359,7 +481,11 @@
 						<!-- Modal Structure -->
 						<div id="modal9" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_9_popup.gif" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -376,12 +502,16 @@
 						<!-- Modal Structure -->
 						<div id="modal7" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_7_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="item shot-thumbnail all picture">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_10.jpg" class="openModal" data-target="modal10">
@@ -394,7 +524,11 @@
 						<!-- Modal Structure -->
 						<div id="modal10" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/catmovie10.gif" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -411,12 +545,16 @@
 						<!-- Modal Structure -->
 						<div id="modal11" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/catmovie11.gif" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					
+
 
 					<div class="item shot-thumbnail all sns">
 						<div class="animate-box">
@@ -430,12 +568,16 @@
 						<!-- Modal Structure -->
 						<div id="modal14" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_14_popup.gif" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					
+
 					<div class="item shot-thumbnail all logo">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_16.jpg" class="openModal" data-target="modal16">
@@ -448,7 +590,11 @@
 						<!-- Modal Structure -->
 						<div id="modal16" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_16_popup_.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -465,7 +611,11 @@
 						<!-- Modal Structure -->
 						<div id="modal5" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_5_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
@@ -482,12 +632,16 @@
 						<!-- Modal Structure -->
 						<div id="modal18" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_18_popup.gif" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
-					
+
 
 					<div class="item shot-thumbnail all character">
 						<div class="animate-box">
@@ -501,13 +655,17 @@
 						<!-- Modal Structure -->
 						<div id="modal20" class="modal">
 							<div class="modal-content">
-								<div class="r_close" title="Close (Esc)">    <div class="bar arrow-top-r"></div>    <div class="bar arrow-middle-r"></div>    <div class="bar arrow-bottom-r"></div>  </div>
+								<div class="r_close" title="Close (Esc)">
+									<div class="bar arrow-top-r"></div>
+									<div class="bar arrow-middle-r"></div>
+									<div class="bar arrow-bottom-r"></div>
+								</div>
 								<div class="popup_img"><img src="images/img_20_popup.jpg" alt="Popup Image"></div>
 							</div>
 						</div>
 					</div>
 
-					
+
 				</div>
 			</div>
 		</div>
