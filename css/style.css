@@ -8047,9 +8047,9 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .5;transform: scale(1.1);
 }
 
-.js .animate-box {
+/* .js .animate-box {
   opacity: 0;
-}
+} */
 
 pre {
   background: #e9e9e9;
