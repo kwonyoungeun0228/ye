@@ -32,6 +32,41 @@ body {
 }
 
 /* 추가 */
+/* styles.css */
+
+
+#myBtn {
+  display: none; /* 초기에는 숨김 */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 1px #dadcdf, 0 3px 4px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 0 0 1px #dadcdf, 0 3px 4px 0 rgba(0, 0, 0, .3);
+  background-image: url(../images/top.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 35%;
+}
+
+#myBtn:hover {
+  background-color: #333;
+  color: #fff;
+  background-image: url(../images/top_hover.png);
+}
+
+
+
 .modal-open {
   overflow: hidden;
 }

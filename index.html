@@ -112,6 +112,7 @@
 							<a href="javascript:void(0)" data-filter="character" class="button">캐릭터디자인</a>
 							<a href="javascript:void(0)" data-filter="logo" class="button">로고디자인</a>
 							<a href="javascript:void(0)" data-filter="picture" class="button">그림</a>
+							<a href="javascript:void(0)" data-filter="etc" class="button">기타</a>
 
 						</div>
 					</div>
@@ -779,7 +780,7 @@
 						</div>
 					</div>
 
-					<div class="item shot-thumbnail all ui">
+					<div class="item shot-thumbnail all ui etc">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_31.jpg" class="openModal" data-target="modal31">
 								<div class="before"></div>
@@ -802,7 +803,7 @@
 					</div>
 
 					
-					<div class="item shot-thumbnail all web">
+					<div class="item shot-thumbnail all web etc">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_35.jpg" class="openModal" data-target="modal35">
 								<div class="before"></div>
@@ -828,7 +829,7 @@
 					
 					
 
-					<div class="item shot-thumbnail all web">
+					<div class="item shot-thumbnail all web etc">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_33.jpg" class="openModal" data-target="modal33">
 								<div class="before"></div>
@@ -850,7 +851,7 @@
 						</div>
 					</div>
 
-					<div class="item shot-thumbnail all web">
+					<div class="item shot-thumbnail all web etc">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_34.jpg" class="openModal" data-target="modal34">
 								<div class="before"></div>
@@ -872,7 +873,7 @@
 						</div>
 					</div>
 
-					<div class="item shot-thumbnail all mobile">
+					<div class="item shot-thumbnail all mobile etc">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_32.jpg" class="openModal" data-target="modal32">
 								<div class="before"></div>
@@ -894,7 +895,7 @@
 						</div>
 					</div>
 
-					<div class="item shot-thumbnail all mobile">
+					<div class="item shot-thumbnail all mobile etc">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_36.jpg" class="openModal" data-target="modal36">
 								<div class="before"></div>
@@ -916,11 +917,11 @@
 						</div>
 					</div>
 
-					<div class="item shot-thumbnail all logo">
+					<div class="item shot-thumbnail all logo etc">
 						<div class="animate-box">
 							<div class="image-pop"><img src="images/img_37.jpg" class="openModal" data-target="modal37">
 								<div class="before"></div>
-								<div class="tx1">복덕방닷컴</div>
+								<div class="tx1">2014년 이전작업</div>
 								<div class="tx2">로고 + 편집(카달로그 브로셔) 디자인</div>
 							</div>
 							<!-- <div class="fh5co-desc">부원대학교<br>로고 + 편집 디자인</div> -->
@@ -943,6 +944,10 @@
 			</div>
 		</div>
 
+
+		<button onclick="topFunction()" id="myBtn" title="상위로 이동"></button>
+
+
 		<footer id="fh5co-footer">
 			<div class="container">
 				<div class="row row-padded">
@@ -952,7 +957,60 @@
 				</div>
 			</div>
 		</footer>
+<script>
+// script.js
 
+// 버튼을 가져옴
+let myButton = document.getElementById("myBtn");
+
+// 사용자가 페이지를 스크롤할 때마다 실행됨
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    // 20px 이상 스크롤했을 때 버튼 표시
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        myButton.style.display = "block";
+    } else {
+        myButton.style.display = "none";
+    }
+}
+
+// 부드러운 스크롤 구현
+function smoothScrollTo(targetPosition, duration) {
+    const start = document.documentElement.scrollTop || document.body.scrollTop;
+    const distance = targetPosition - start;
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, start, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    // Ease function for smooth scrolling
+    function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
+
+// 버튼 클릭 시 페이지 상단으로 부드럽게 이동
+function topFunction() {
+    smoothScrollTo(0, 600); // 600ms 동안 스크롤
+}
+
+	
+</script>
+
+		
 		<script>
 			$(document).ready(function () {
 				$(".button").click(function () {
